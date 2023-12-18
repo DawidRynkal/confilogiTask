@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CustomButton, { ButtonTypes } from "../buttons/CustomButton";
 import ErrorIcon from "../../../assets/images/icon-error.svg";
 
 const FooterContactForm = () => {
   const [inputValue, setInputValue] = useState<string>("");
   const [isValidEmail, setIsValidEmail] = useState<boolean>(true);
+  const [joinCount, setJoinCount] = useState<number>(35000);
 
   const handleContactUs = () => {
     if (validateEmail(inputValue)) {
@@ -24,10 +25,21 @@ const FooterContactForm = () => {
     setInputValue(value);
   };
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setJoinCount((prevCount) => (prevCount > 0 ? prevCount - 500 : 0));
+    }, 280);
+    setTimeout(() => {
+      clearInterval(intervalId);
+    }, 20000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div className="footer__contact-form">
       <div className="footer__title-one">
-        <p>35,000+ already joined</p>
+        <p>{joinCount}+ already joined</p>
       </div>
       <div className="footer__title-two">
         <p>Stay up-to-date with what we're doing</p>
