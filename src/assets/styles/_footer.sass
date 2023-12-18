@@ -1,6 +1,7 @@
 @import '_colors'
     
-.footer 
+//FOOTER BOTTOM
+.footer__bottom
   display: flex
   flex-direction: column
   align-items: center
@@ -11,12 +12,6 @@
 
   .footer__logo 
     padding: 20px 10px 10px 10px
-
-  .footer__navigation-container 
-  
-
-  .footer__navigation 
-   
 
   .footer__list 
     list-style: none
@@ -38,13 +33,79 @@
   .footer__item:hover
     text-decoration: underline
 
-  .footer__social-icons-container 
+  .footer__social-container 
     display: flex
     align-items: center
     justify-content: space-between
     margin-top: 20px
     margin-bottom: 15px
 
-  .footer__social-icons-container a
+  .footer__social-container a
     text-decoration: none
     padding: 0 10px
+
+
+//FOOTER TOP
+
+.footer__top 
+  background-color: $blueBright
+  color: $whiteColor
+  padding: 64px 32px 32px 32px
+
+  .footer__contact-form 
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+
+    input::-webkit-input-placeholder
+      opacity: 0.5
+
+    .footer__form
+      position: relative
+      width: 100%
+      margin-top: 16px
+
+      .footer__error-icon
+        position: absolute
+        top: 22px
+        right: 16px
+
+      .footer__input
+        padding: 14px 20px
+        font-size: 15px
+        width: calc(100% - 40px)
+        border: none
+        border-radius: 4px
+        margin: 8px 0
+        outline: none
+
+        &.invalid 
+          border: 2px solid $redBright
+          box-sizing: border-box
+          width: 100%
+          padding-right: 40px
+
+    .error-message 
+      background: $redBright
+      font-size: 12px
+      position: relative
+      top: -10px
+      text-align: left
+      font-style: italic
+      border-bottom-right-radius: 4px
+      border-bottom-left-radius: 4px
+      padding: 5px 10px
+
+    p 
+      padding: 8px
+
+    .footer__title-one 
+      text-transform: uppercase
+      font-size: 12px
+      letter-spacing: 5px
+
+    .footer__title-two 
+      font-size: 22px
+

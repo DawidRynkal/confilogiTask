@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Hamburger from "../../assets/images/icon-hamburger.svg";
-import routerPaths from "../../router/router-paths";
-import LogoIcon from "./icons/LogoIcon";
+import Hamburger from "../../../assets/images/icon-hamburger.svg";
+import routerPaths from "../../../router/router-paths";
+import LogoIcon from "../icons/LogoIcon";
 
 const Header = () => {
   return (
