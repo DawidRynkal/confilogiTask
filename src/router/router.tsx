@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router";
-import Home from "../pages/Home/Home";
+import HomePage from "../pages/home-page";
 import routerPaths from "./router-paths";
-import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import ErrorPage from "../pages/ErrorPage";
 
 const Router = () => {
   return (
     <Routes>
-      <Route path={routerPaths.home} element={<Home />} />
+      <Route path={routerPaths.home} element={<HomePage />} />
       <Route path={routerPaths.pageInProgress} element={<ErrorPage />} />
     </Routes>
   );
