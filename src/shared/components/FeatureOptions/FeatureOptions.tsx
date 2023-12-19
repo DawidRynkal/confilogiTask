@@ -16,18 +16,18 @@ const FeatureOptions = () => {
     switch (index) {
       case 0:
         return (
-          <>
+          <div className="feature-options__content">
             <ImageShapeComponent ilustration={Ilustration} leftShape />
             <TextComponent
               title="Bookmark in one click"
               showButton
               paragraph="A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
             />
-          </>
+          </div>
         );
       case 1:
         return (
-          <>
+          <div className="feature-options__content">
             <ImageShapeComponent
               ilustration={Ilustration2}
               leftShape
@@ -38,11 +38,11 @@ const FeatureOptions = () => {
               showButton
               paragraph="A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
             />
-          </>
+          </div>
         );
       case 2:
         return (
-          <>
+          <div className="feature-options__content">
             <ImageShapeComponent
               ilustration={Ilustration3}
               leftShape
@@ -53,7 +53,7 @@ const FeatureOptions = () => {
               showButton
               paragraph="A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
             />
-          </>
+          </div>
         );
       default:
         return null;

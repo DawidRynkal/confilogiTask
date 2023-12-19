@@ -65,3 +65,27 @@
   .text-component
     max-width: 60%
     margin: auto
+
+@media screen and (min-width: $large+'px')
+  .image-shape__image img
+    width: 655px
+    top: -82px
+    position: relative
+  .text-component
+    margin: 0
+    text-align: left
+  .image-shape__image
+    width: 100%
+  .image-shape__shape
+    height: 354px
+    border-top-left-radius: 177px
+    border-bottom-left-radius: 177px
+  .text-component--centered
+    text-align: center
+    margin: auto
+  .feature-options__content
+    display: flex
+    .image-shape__shape--left
+      width: auto
+      img
+        position: relative

@@ -11,6 +11,7 @@ const DownloadExtension = () => {
     <div className="download-extension">
       <TextComponent
         title="Dwonload the extension"
+        centerText
         paragraph="A clean and simple interface to organize your fgavourite websites.
         Open a new browser tab and see your sites load instantly. Try it for
         free."

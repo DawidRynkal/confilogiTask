@@ -13,3 +13,16 @@
 @media screen and (min-width: $small+'px')
   .top-section
     padding-top: 150px
+
+@media screen and (min-width: $large+'px')
+  .top-section
+    display: flex
+    flex-direction: row-reverse
+    justify-content: space-between
+    align-items: center
+  .top-section__buttons-container
+    justify-content: flex-start
+  .top-section__text
+    padding-left: 132px
+    position: relative
+    top: -105px

@@ -10,6 +10,7 @@
     padding-top: 24px
     margin-bottom: 72px
     text-align: center
+    cursor: pointer
     .feature-options__item
       padding-bottom: 20px
       padding-top: 20px
@@ -57,3 +58,17 @@
         width: 450px
         right: -110px
         top: -100px
+
+@media screen and (min-width: $large+'px')
+  .feature-options__elements
+    flex-direction: row !important
+    justify-content: center
+  .feature-options__item 
+    padding: 10px
+    border-top: none !important
+    min-width: 278px
+  .feature-options__item--active
+    &::after
+      width: 100% !important
+      
+  
