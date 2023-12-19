@@ -1,5 +1,11 @@
+import TopSection from "../../shared/components/TopSection/TopSection";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <>
+      <TopSection />
+    </>
+  );
 };
 
 export default HomePage;
