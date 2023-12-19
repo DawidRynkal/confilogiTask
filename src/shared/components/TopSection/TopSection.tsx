@@ -1,22 +1,18 @@
 import CustomButton, { ButtonTypes } from "../buttons/CustomButton";
 import Ilustration from "../../../assets/images/illustration-hero.svg";
+import TextComponent from "../TextComponent/TextComponent";
+import ImageShapeComponent from "../ImageShapeComponent/ImageShapeComponent";
 
 const TopSection = () => {
   return (
     <div className="top-section">
-      <div className="top-section__image">
-        <div className="top-section__shape">
-          <img src={Ilustration} alt="ilustration" />
-        </div>
-      </div>
-      <div className="top-section__text-container">
-        <h1>A Simple Bookmark Manager</h1>
-        <p>
-          A clean and simple interface to organize your fgavourite websites.
+      <ImageShapeComponent ilustration={Ilustration} />
+      <TextComponent
+        title="A Simple Bookmark Manager"
+        paragraph="A clean and simple interface to organize your fgavourite websites.
           Open a new browser tab and see your sites load instantly. Try it for
-          free.
-        </p>
-      </div>
+          free."
+      />
       <div className="top-section__buttons-container">
         <CustomButton
           text="Get it on Chrome"

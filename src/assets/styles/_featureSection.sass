@@ -1,0 +1,35 @@
+@import '_colors'
+    
+.features
+  margin-top: 54px
+.features__options
+  .feature-options__elements
+    display: flex
+    flex-direction: column
+    padding: 32px
+    padding-top: 24px
+    margin-bottom: 72px
+    text-align: center
+    .feature-options__item
+      padding-bottom: 20px
+      padding-top: 20px
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+      color: rgba(0, 0, 0, 0.6)
+      position: relative
+      &:first-child
+        border-top: 1px solid rgba(0, 0, 0, 0.2)
+      &:hover 
+        color: black
+
+    .feature-options__item--active 
+        color: black
+        &::after
+          display: block
+          content: ''
+          height: 5px
+          width: 50%
+          background: $redBright
+          position: absolute
+          bottom: 0
+          left: 50%
+          transform: translateX(-50%)
