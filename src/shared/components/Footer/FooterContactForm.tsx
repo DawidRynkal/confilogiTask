@@ -66,7 +66,7 @@ const FooterContactForm = () => {
         <CustomButton
           handleClick={handleContactUs}
           text="Contact Us"
-          type={ButtonTypes.STANDARD}
+          type={ButtonTypes.RED}
           full
         />
       </div>

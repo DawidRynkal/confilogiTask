@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import FacebookIcon from "../../../assets/images/icon-facebook.svg";
-import XIcon from "../../../assets/images/icon-twitter.svg";
 import routerPaths from "../../../router/router-paths";
 import FooterNavigation from "./FooterNavigation";
 import LogoIcon from "../icons/LogoIcon";
 import FooterContactForm from "./FooterContactForm";
+import FacebookIcon from "../icons/FacebookIcon";
+import TwitterIcon from "../icons/TwitterIcon";
 
 const Footer = () => {
   return (
@@ -23,10 +23,10 @@ const Footer = () => {
         </div>
         <div className="footer__social-container">
           <Link to="/facebook">
-            <img src={FacebookIcon} alt="facebook logo" />
+            <FacebookIcon />
           </Link>
           <Link to="/x">
-            <img src={XIcon} alt="x logo" />
+            <TwitterIcon />
           </Link>
         </div>
       </div>

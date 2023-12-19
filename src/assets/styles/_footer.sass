@@ -31,7 +31,7 @@
     text-transform: uppercase
 
   .footer__item:hover
-    text-decoration: underline
+    color: $redBright
 
   .footer__social-container 
     display: flex
@@ -43,6 +43,10 @@
   .footer__social-container a
     text-decoration: none
     padding: 0 10px
+
+  .footer__social-container a 
+    &:hover svg path
+      fill: $redBright
 
 
 //FOOTER TOP
