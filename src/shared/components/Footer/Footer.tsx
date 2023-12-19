@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="footer__bottom">
         <div className="footer__logo">
           <Link to={routerPaths.home}>
-            <LogoIcon whiteVersion />
+            <LogoIcon whiteText />
           </Link>
         </div>
         <div className="footer__navigation-container">
