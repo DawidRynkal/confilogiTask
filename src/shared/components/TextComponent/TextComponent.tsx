@@ -4,16 +4,18 @@ interface TextComponentProps {
   title: string;
   paragraph: string;
   showButton?: boolean;
+  bigTitle?: boolean;
 }
 
 const TextComponent = ({
   title,
   paragraph,
   showButton,
+  bigTitle,
 }: TextComponentProps) => {
   return (
     <div className="text-component">
-      <h1>{title}</h1>
+      <h1 className={`${bigTitle && "text-component--big"}`}>{title}</h1>
       <p>{paragraph}</p>
       {showButton && (
         <CustomButton

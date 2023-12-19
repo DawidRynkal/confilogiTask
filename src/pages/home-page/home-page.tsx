@@ -1,3 +1,4 @@
+import DownloadExtension from "../../shared/components/DownloadExtension/DownloadExtension";
 import FeaturesSection from "../../shared/components/FeaturesSection/FeaturesSection";
 import TopSection from "../../shared/components/TopSection/TopSection";
 
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <TopSection />
       <FeaturesSection />
+      <DownloadExtension />
     </>
   );
 };

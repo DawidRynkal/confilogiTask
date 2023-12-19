@@ -9,6 +9,7 @@ const TopSection = () => {
       <ImageShapeComponent ilustration={Ilustration} />
       <TextComponent
         title="A Simple Bookmark Manager"
+        bigTitle
         paragraph="A clean and simple interface to organize your fgavourite websites.
           Open a new browser tab and see your sites load instantly. Try it for
           free."

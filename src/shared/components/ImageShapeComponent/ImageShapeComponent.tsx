@@ -1,5 +1,5 @@
 interface ImageShapeComponentProps {
-  ilustration: any;
+  ilustration: string;
   leftShape?: boolean;
   highImage?: boolean;
 }
