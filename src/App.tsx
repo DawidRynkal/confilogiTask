@@ -10,16 +10,31 @@ function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
+    const isScrolledToTop = () => {
+      return window.scrollY === 0;
+    };
+
+    const handleScroll = () => {
+      if (isScrolledToTop()) {
+        setModalIsOpen(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
     const timer = setTimeout(() => {
       setModalIsOpen(true);
     }, 3000);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const closeModal = () => {
     setModalIsOpen(false);
   };
+
   return (
     <>
       <Header />
