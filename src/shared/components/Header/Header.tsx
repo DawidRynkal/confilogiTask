@@ -9,7 +9,7 @@ const Header = () => {
   const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
 
   return (
-    <>
+    <div className="mobile-nav">
       <div
         className={`mobile-nav__container ${
           showMobileNav && "mobile-nav__container--show"
@@ -32,7 +32,7 @@ const Header = () => {
           <img src={Hamburger} alt="hamburger menu" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

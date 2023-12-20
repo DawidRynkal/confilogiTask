@@ -1,0 +1,33 @@
+@import '_colors' 
+    
+.desktop-navigation
+  background-color: $whiteColor
+  padding: 38px 100px
+  box-sizing: border-box
+  display: none
+  .button__red
+    padding: 12px 36px
+    margin-left: 30px
+    &:hover
+      padding: 10px 34px
+
+.desktop-navigation__nav-login 
+  display: flex
+
+.desktop-navigation__item
+  margin-bottom: 4px
+  margin-top: 0
+  font-size: 14px
+  padding: 0 21px 
+  text-decoration: none
+  color: black
+  text-transform: uppercase
+  &:hover
+    color: $redBright
+
+@media screen and (min-width: $large+'px')
+  .desktop-navigation
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
