@@ -26,3 +26,24 @@
     padding-left: 50px
     position: relative
     top: -105px
+
+@media screen and (min-width: $extraLarge+'px')
+  .top-section__text
+    padding-left: 70px
+    .text-component
+      max-width: 100% 
+      padding-right: 100px
+  .top-section__buttons-container button
+    width: 165px
+    &:hover
+      padding-bottom: 12px
+      padding-top: 12px
+      background: $whiteColor
+  .button__standard
+    &:hover
+      border: 2px solid $blueBright
+      color: $blueBright
+  .button__gray
+    &:hover
+      border: 2px solid $grayBright
+      box-shadow: none
