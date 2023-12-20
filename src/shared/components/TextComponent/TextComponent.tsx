@@ -6,6 +6,7 @@ interface TextComponentProps {
   showButton?: boolean;
   bigTitle?: boolean;
   centerText?: boolean;
+  leftVersion?: boolean;
 }
 
 const TextComponent = ({
@@ -14,10 +15,11 @@ const TextComponent = ({
   showButton,
   bigTitle,
   centerText,
+  leftVersion
 }: TextComponentProps) => {
   return (
     <div
-      className={`text-component ${centerText && "text-component--centered"}`}
+      className={`text-component ${centerText && "text-component--centered"} ${leftVersion && "text-component--left"}`}
     >
       <h1 className={`${bigTitle && "text-component--big"}`}>{title}</h1>
       <p>{paragraph}</p>

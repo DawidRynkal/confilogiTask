@@ -45,24 +45,27 @@ const FooterContactForm = () => {
         <p>Stay up-to-date with what we're doing</p>
       </div>
       <div className="footer__form">
-        <input
-          className={`footer__input ${isValidEmail ? "" : "invalid"}`}
-          type="email"
-          value={inputValue}
-          placeholder="Enter your email address"
-          onChange={handleInputChange}
-        />
+        <div className="footer__img-input">
+          <input
+            className={`footer__input ${isValidEmail ? "" : "invalid"}`}
+            type="email"
+            value={inputValue}
+            placeholder="Enter your email address"
+            onChange={handleInputChange}
+          />
 
-        {!isValidEmail && (
-          <>
-            <img
-              className="footer__error-icon"
-              src={ErrorIcon}
-              alt="invalid icon"
-            />
-            <p className="error-message">Whoops, make sure it's an email</p>
-          </>
-        )}
+          {!isValidEmail && (
+            <>
+              <img
+                className="footer__error-icon"
+                src={ErrorIcon}
+                alt="invalid icon"
+              />
+              <p className="error-message">Whoops, make sure it's an email</p>
+            </>
+          )}
+        </div>
+
         <CustomButton
           handleClick={handleContactUs}
           text="Contact Us"

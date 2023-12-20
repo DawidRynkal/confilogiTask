@@ -13,13 +13,15 @@ const Footer = () => {
         <FooterContactForm />
       </div>
       <div className="footer__bottom">
-        <div className="footer__logo">
-          <Link to={routerPaths.home}>
-            <LogoIcon whiteText />
-          </Link>
-        </div>
-        <div className="footer__navigation-container">
-          <FooterNavigation />
+        <div className="footer__logo-nav">
+          <div className="footer__logo">
+            <Link to={routerPaths.home}>
+              <LogoIcon whiteText />
+            </Link>
+          </div>
+          <div className="footer__navigation-container">
+            <FooterNavigation />
+          </div>
         </div>
         <div className="footer__social-container">
           <Link to="/facebook">

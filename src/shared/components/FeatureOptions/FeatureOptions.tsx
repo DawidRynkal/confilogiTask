@@ -21,6 +21,7 @@ const FeatureOptions = () => {
             <TextComponent
               title="Bookmark in one click"
               showButton
+              leftVersion
               paragraph="A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
             />
           </div>
@@ -36,6 +37,7 @@ const FeatureOptions = () => {
             <TextComponent
               title="Speedy Searching"
               showButton
+              leftVersion
               paragraph="A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
             />
           </div>
@@ -51,6 +53,7 @@ const FeatureOptions = () => {
             <TextComponent
               title="Easy Sharing"
               showButton
+              leftVersion
               paragraph="A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
             />
           </div>
