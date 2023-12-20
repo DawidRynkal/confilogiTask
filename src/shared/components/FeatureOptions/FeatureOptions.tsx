@@ -22,7 +22,7 @@ const FeatureOptions = () => {
               title="Bookmark in one click"
               showButton
               leftVersion
-              paragraph="A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free."
+              paragraph="Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how to manage your favourite sites."
             />
           </div>
         );

@@ -20,7 +20,7 @@
       &:first-child
         border-top: 1px solid rgba(0, 0, 0, 0.2)
       &:hover 
-        color: black
+        color: $redBright
 
     .feature-options__item--active 
         color: black
@@ -80,5 +80,37 @@
         width: 400px
         right: -110px
         top: -100px
-      
+
+@media screen and (min-width: $extraLarge+'px')
+  .features
+    .text-component
+      max-width: 550px
+  .image-shape__shape--left
+    width: calc(100% + 105px) !important
+    img
+      width: 534px
+      right: -114px
+      top: -80px
+      &.image--high
+        width: 455px
+        right: -114px
+        top: -65px
+
+  .feature-options__content
+    margin-bottom: 100px
+    .text-component--left
+      margin-left: 264px
+      margin-right: 50px
+      position: relative
+      top: -64px
+      .button
+        margin-top: 40px
+        padding: 17px 26px
+
+  .feature-options__elements
+    font-size: 17px
+    margin-bottom: 114px !important
+
+  .feature-options__item
+    min-width: 218px
   
