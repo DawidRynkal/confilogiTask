@@ -12,9 +12,7 @@ const DownloadExtension = () => {
       <TextComponent
         title="Dwonload the extension"
         centerText
-        paragraph="A clean and simple interface to organize your fgavourite websites.
-        Open a new browser tab and see your sites load instantly. Try it for
-        free."
+        paragraph="We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize."
       />
       <div className="download-extension__tiles">
         <div className="download-extension__tile">

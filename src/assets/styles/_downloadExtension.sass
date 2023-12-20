@@ -51,3 +51,20 @@
   .download-extension
     max-width: 800px
     margin: auto
+
+@media screen and (min-width: $extraLarge+'px')
+  .download-extension__tiles
+    flex-direction: row
+    padding: 10px
+    padding: 38px 10px 134px 10px
+  .download-extension__tile
+    margin: 15px
+    width: 225px
+    position: relative
+    &:first-child
+      top: -40px
+    &:nth-child(3)
+      top: 40px
+      
+  .download-extension
+    max-width: 100%

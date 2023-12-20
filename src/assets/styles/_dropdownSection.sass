@@ -14,6 +14,14 @@
     padding-top: 20px
     border-bottom: 1px solid rgba(0, 0, 0, 0.2)
     font-size: 14px
+    cursor: pointer
+    color: green !important
+    &:hover
+      .dropdown__title
+        p
+          color: $redBright
+    &:first-child
+      border-top: 1px solid rgba(0, 0, 0, 0.2)
     .dropdown__title
       color: $blueDark
       display: flex
@@ -30,3 +38,14 @@
   .dropdown
     max-width: 604px
     margin: auto
+
+@media screen and (min-width: $extraLarge+'px')
+  .dropdown__elements
+    padding: 34px 140px
+    .dropdown__element
+      font-size: 16px
+  .dropdown
+    max-width: 840px
+    button
+      margin-top: 40px
+      padding: 17px 26px

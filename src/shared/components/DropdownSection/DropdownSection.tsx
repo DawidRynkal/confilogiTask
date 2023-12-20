@@ -40,7 +40,7 @@ const DropdownSection = () => {
           }`}
         >
           <div onClick={() => handleOpenClick(1)} className="dropdown__title">
-            How can i request a new browser?
+            <p> How can i request a new browser?</p>
             <ArrowIcon activeArrow={expandedIndex === 1} />
           </div>
           {expandedIndex === 1 && (
@@ -56,7 +56,7 @@ const DropdownSection = () => {
           }`}
         >
           <div onClick={() => handleOpenClick(2)} className="dropdown__title">
-            Is there a mobile app?
+            <p>Is there a mobile app?</p>
             <ArrowIcon activeArrow={expandedIndex === 2} />
           </div>
           {expandedIndex === 2 && (
@@ -72,7 +72,7 @@ const DropdownSection = () => {
           }`}
         >
           <div onClick={() => handleOpenClick(3)} className="dropdown__title">
-            What about other Chromium browsers?
+            <p>What about other Chromium browsers?</p>
             <ArrowIcon activeArrow={expandedIndex === 3} />
           </div>
           {expandedIndex === 3 && (
