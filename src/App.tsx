@@ -23,7 +23,7 @@ function App() {
     window.addEventListener("scroll", handleScroll);
     const timer = setTimeout(() => {
       setModalIsOpen(true);
-    }, 3000);
+    }, 30000);
 
     return () => {
       clearTimeout(timer);
