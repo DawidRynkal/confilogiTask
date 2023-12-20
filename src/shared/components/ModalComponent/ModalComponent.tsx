@@ -7,7 +7,6 @@ const ModalComponent = ({ isOpen, closeModal }: any) => {
     <Modal
       isOpen={isOpen}
       onRequestClose={closeModal}
-      contentLabel="Przykładowy Modal"
       className="modal"
       overlayClassName="modal__overlay"
     >
